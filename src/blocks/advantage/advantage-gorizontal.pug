@@ -1,0 +1,23 @@
+mixin advantage-gorizontal(data)
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+		tr
+			td(align="left" style="padding: 17px 17px; padding-bottom: 0;")
+				table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 100%;")
+					tr
+						<!-- ID:BR TOUCH IMG -->
+						td(align="left" height="15" valign="top" width="68" style="line-height: 0px;")
+							img(src=image_path+data.img alt=data.alt width="52" height="52" style="display: block; width: 100%; max-width: 52px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+						td(align="left" valign="middle")
+							table(align="left" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+								tr
+									<!-- ID:TXT HEADING -->
+									td.h3(valign="middle" align="left")!=data.title
+								tr
+									<!-- ID:TXT TOUCH SUBTITLE -->
+									td.text.text--subtitle-14(align="left")!=data.subtitle
+		tr
+			td(align="left" style="padding-top: 5px; padding-bottom: 17px; padding-left: 17px; padding-right: 17px;")
+				table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+					tr
+						<!-- ID:TXT CONTENT -->
+						td.text(align="left")!=data.text

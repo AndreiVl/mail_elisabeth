@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+html(lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="min-height: 100vh;")
+	include include/head.pug
+	+head()
+
+	body(style="min-height: 100vh;")
+		-var utm = '0404_bonuses';
+		-var link = '?utm_source=crm&utm_medium=email&utm_content=homepage&utm_campaign='+utm;
+
+		include ../blocks/mixins.pug						
+		<!-- BODY -->
+		table(align="center" border="0" bgcolor="#E5E5E5" cellpadding="0" cellspacing="0" width="100%" style="min-height: 100vh;")
+			tr
+				+td-margin({height: 30 })
+			tr 
+				td(align="center" valign="top" style="vertical-align: top;")
+					table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							td(align="center")
+								include ../blocks/header/header-4.pug
+						tr
+							td(align="center")
+								<!-- TEXT-CONTENT STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tbody
+										tr
+											td(align="center")
+												+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+												div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+													<!-- ID:BG SECTION-1 -->
+													table(align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+														tbody
+															tr
+																td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+																	+IE-1({width: body_width_3 ,aling: 'center', valing: 'top'})
+																	div(style="display: inline-block; width: 100%; max-width: " + body_width_3 + "px; vertical-align: top;")
+																		table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_3 + "px;")
+																			tbody
+																				tr
+																					+td-margin({height: '60'})
+																				tr
+																					td.h2(align="left") What will be in fashion in 2020 the latest trends of the season
+																				tr
+																					+td-margin({margin: 'mr-15'})
+																				tr
+																					td.lead.lead--gray(align="left") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, mauris accumsan mattis amet in vulputate. Fermentum id vestibulum viverra amet tempor risus, quisque at.Placerat euismod congue nam id eget volutpat, urna sed viverra. A mi, in convallis
+																				tr
+																					+td-margin({height: '60'})
+																				tr
+																					td(align="center")
+																						table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0;")
+																							tr
+																								td(align="center")
+																									<!-- TABLE CENTER -->
+																									table(align="center" border="0" cellpadding="0" cellspacing="0" width="205" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																										tr
+																											td(align="center")
+																												<!-- ID:BG SUPPORT BG -->
+																												table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																													tr
+																														td(align="center")
+																															+advantage-vertical({img: 'icon-52--question.png', alt: 'question', subtitle: 'always in touch', title: 'Support 24/7', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu.'})
+																				tr
+																					+td-margin({height: '60'})
+																				tr
+																					td.text(align="left") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat euismod congue nam id eget volutpat, urna sed viverra. A mi, in convallis varius aenean. Volutpat ac egestas ante enim massa bibendum. Lectus ullamcorper consequat est lacus, nullam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat euismod congue nam id eget volutpat, urna sed viverra. Placerat euismod congue nam id eget volutpat, urna sed viverra. A mi, in convallisPlacerat euismod congue nam id eget volutpat, urna sed viverra. A mi, in convallisPlacerat euismod congue nam id eget volutpat, urna sed viverra. A mi, in convallis
+																				tr
+																					+td-margin({margin: 'mr-25'})
+																				tr
+																					td(align="center")
+																						a(href="#" target="_blank")
+																							img(src=image_path+"btn-140__dark-01.png" border="0" alt="btn" width="140" height="44" style="display: block; width: 100%; max-width: 140px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+																				tr
+																					+td-margin({height: '60'})
+																	|!{IE_TABLE_END}
+												|!{IE_TABLE_END}
+								<!-- TEXT-CONTENT ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/footer/footer-2.pug
+			tr
+				+td-margin({height: 30 })
+		<!-- /BODY -->

@@ -1,0 +1,24 @@
+mixin block-gorizontal(data)
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace :0pt; width:auto !important;")
+		tbody
+			tr
+				td(align="center" style="color:#666666; line-height:0px;" width="298")
+					img(src=image_path+data.img, border="0" alt="" width="298" height="180" style="display: block; width: 100%; max-width: 298px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+			tr
+				+td-margin({margin: 'mr-10'})
+			tr
+				td.text.text.text--gray(align="left" valign="top")!=data.dates
+			tr
+				+td-margin({margin: 'mr-5'})
+			tr
+				td.h3(align="left" valign="top")!=data.title
+			tr
+				+td-margin({margin: 'mr-5'})
+			tr
+				td.text(align="left" valign="top")!=data.text
+			tr
+				+td-margin({margin: 'mr-20'})
+			tr
+				td(align="left" valign="top")
+					a(href="#" target="_blank")
+						img(src=image_path+"btn-164__dark-01.png" border="0" alt="btn"  width="164" height="44" style="display: block; width: 100%; max-width: 164px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")

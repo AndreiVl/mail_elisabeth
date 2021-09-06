@@ -1,0 +1,132 @@
+mixin IE-1(data)
+	- var table = '<!--[if (gte mso 9)|(IE)]><table aria-hidden="true" width="'+data.width+'" border="0" cellspacing="0" cellpadding="0"><tr><td align="'+data.aling+'" valign="'+data.valing+'" ><![endif]-->'
+
+	- var col = '<!--[if (gte mso 9)|(IE)]><table aria-hidden="true" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="'+data.width_col+'" align="'+data.aling+'" valign="'+data.valing+'" ><![endif]-->'
+
+		- var col_2 = '<!--[if (gte mso 9)|(IE)]><table aria-hidden="true" width="'+data.width+'" border="0" cellspacing="0" cellpadding="0"><tr><td width="'+data.width_col+'" align="'+data.aling+'" valign="'+data.valing+'" ><![endif]-->'
+
+	- var col_td = '<!--[if (gte mso 9)|(IE)]></td><td  width="'+data.width_col+'" align="'+data.aling+'" valign="'+data.valing+'"><![endif]-->'
+
+	if data.col == 2
+		!=col
+	else if data.col == 3
+		!=col_2
+		
+	else if data.col_td == 2
+		!=col_td
+	else
+		!=table
+
+mixin IE(data)
+	- var table = '<!--[if (gte mso 9)|(IE)]><table width="'+body_width+'" border="0" cellspacing="0" cellpadding="0"><tr><td align="'+data.aling+'" valign="'+data.valing+'" ><![endif]-->'
+
+	- var col_2 = '<!--[if (gte mso 9)|(IE)]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="'+td_2_col_width+'" align="'+data.aling+'" valign="'+data.valing+'" ><![endif]-->'
+
+	- var col_3 = '<!--[if (gte mso 9)|(IE)]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="'+td_3_col_width+'" align="'+data.aling+'" valign="'+data.valing+'" ><![endif]-->'
+
+	- var col_td_2 = '<!--[if (gte mso 9)|(IE)]></td><td  width="'+td_2_col_width+'" align="'+data.aling+'" valign="'+data.valing+'"><![endif]-->'
+
+	- var col_td_3 = '<!--[if (gte mso 9)|(IE)]></td><td  width="'+td_3_col_width+'" align="'+data.aling+'" valign="'+data.valing+'"><![endif]-->'
+
+	if data.col == 2
+		!=col_2
+	else if data.col == 3 
+		!=col_3
+
+	else if data.col_td == 2
+		!=col_td_2
+	else if data.col_td == 3
+		!=col_td_3
+
+	else
+		!=table
+
+//- if data.col = 2
+//-    2 col
+//- else if data.col = 3
+//-    3 col
+//- else
+//-    table
+
+//- if data.service
+//- 	case data.service
+//- 		when 2
+//- 			include ../service-catalog/service-catalog--2.pug
+
+//- 		when 3
+//- 			include ../service-catalog/service-catalog--3.pug
+
+//- else
+//- 	include ../service-catalog/service-catalog.pug
+
+//- 	if data.number
+//- 		span!=data.number
+//- 		|.
+
+//- span.search-item__title!=data.title
+
+//- if data.tag
+//- 	span.search-item__tag
+//- 		include ../tag/tag.pug
+//- 		+tag({tag: data.tag})
+
+//- if data.detail
+//- 	span.search-item__detail!=data.detail
+
+//- // footer
+//- if data.footer
+//- 	div.task__footer
+//- 		case data.footer
+//- 			when 'action'
+//- 				div.task__action
+//- 					a.btn.btn--middle.task__link.task__link--return(data-fancybox data-src="#rejection" href="javascript:;") Отменить
+//- 					a.btn.btn--middle.task__link.task__link--message(data-fancybox data-src="#message" href="javascript:;") Сообщение
+
+//- 			when 'vote'
+//- 				div.task__vote
+//- 					include ../vote/vote.pug
+//- 				a.btn.btn--canceled.task__link.task__link--cancel(href="#") Не выполнена
+
+//- 			when 'vote-star'
+//- 				div.vote.vote--full
+//- 					span.vote__item.selected
+//- 					span.vote__item.selected
+//- 					span.vote__item.selected
+//- 					span.vote__item.selected
+//- 					span.vote__item
+
+
+//- 			when 'vote-without'
+//- 				div.vote.vote--without Нет вашей оценки
+
+//- 			default
+//- 				|
+
+//- if data.icons
+//- div.search-item__help
+//- 	div.search-item__tooltip Так будет выглядеть всплывающая подсказка
+//- 	i.icon--attention
+
+//- mixin margin(data)
+//- 	case data.margin
+//- 		when 'mr-60'
+//- 			- var margin = 60
+//- 		when 'mr-40'
+//- 			- var margin = 40
+//- 		when 'mr-25'
+//- 			- var margin = 25
+//- 		when 'mr-20'
+//- 			- var margin = 20
+//- 		when 'mr-15'
+//- 			- var margin = 15
+//- 		when 'mr-10'
+//- 			- var margin = 10
+//- 		when 'mr-5'
+//- 			- var margin = 5
+//- 		default
+//- 			- var margin = data.height
+
+//- 	table(width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0; margin: 0;" )
+//- 		tbody
+//- 			tr
+//- 				td(height=margin style="mso-line-height-rule: exactly; line-height: " + margin + "px; font-size: 1px;" class!=attributes.class) &nbsp;

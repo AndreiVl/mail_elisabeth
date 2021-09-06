@@ -1,0 +1,41 @@
+<!-- HEADER-2 STARTS -->
+table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tr
+		td(align="center")
+			+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+			div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+				<!-- ID:BG HEADER-1 OPTIONAL -->
+				table(align="center" bgcolor="#FFFFFF" border="0" class="display-width" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+					tr
+						td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+							+IE-1({width: body_width_1 ,aling: 'center', valing: 'top'})
+							div(style="display: inline-block; width: 100%; max-width: " + body_width_1 + "px; vertical-align: top;")
+								table(align="center" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_1 + "px;")
+									tr
+										+td-margin({margin: 'mr-25'})
+									tr
+										td(align="center" style="font-size:0;")
+											table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%;")
+												tr
+													td(align="center" style="font-size:0; width: 100%; max-width: 100%;")
+														<!--TABLE LEFT-->
+														table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+															tr
+																td(align="center")
+																	table(align="center" border="0" cellpadding="0" cellspacing="0" style="width: auto !important;")
+																		tr
+																			<!-- ID:TXT HEADER-1 -->
+																			td(align="center" valign="top" style="color:#333333;" width="107")
+																				a.link(href="#")
+																					img(src=image_path+"logo.jpg" alt="log" width="107" height="32" style="display: block; padding: 0; margin: 0; border: 0;")
+																			td(width="100%")
+																				|&nbsp;
+																			td.text(align="rigth" valign="middle")
+																				+IE-1({col: 3, width: '100' , width_col: '100', aling: 'right', valing: 'middle'})
+																				a.link.link--tdecor.link--nowrap(href="#" target="_blank") Web version
+																				|!{IE_TABLE_END}
+									tr
+										+td-margin({margin: 'mr-25'})
+							|!{IE_TABLE_END}
+			|!{IE_TABLE_END}
+<!-- HEADER-2 ENDS -->

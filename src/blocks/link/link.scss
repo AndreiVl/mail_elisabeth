@@ -1,0 +1,35 @@
+.link {
+  /* 2 Block model */
+  display: inline-block;
+  
+  /* 3 Typography */
+  text-decoration: none;
+  color: $color-gray300;
+}
+.link--tdecor {
+  /* 3 Typography */
+  text-decoration: underline;
+}
+.link--white {
+  /* 3 Typography */
+  color: $color-white;
+}
+.link--balack {
+  /* 3 Typography */
+  color: $color-gray900
+}
+.link--nowrap {
+  /* 3 Typography */
+  white-space: nowrap;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation*/
+
+/* 6 Misc */

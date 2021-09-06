@@ -1,0 +1,20 @@
+mixin td-margin(data)
+	case data.margin
+		when 'mr-60'
+			- var margin = 60
+		when 'mr-40'
+			- var margin = 40
+		when 'mr-25'
+			- var margin = 25
+		when 'mr-20'
+			- var margin = 20
+		when 'mr-15'
+			- var margin = 15
+		when 'mr-10'
+			- var margin = 10
+		when 'mr-5'
+			- var margin = 5
+		default
+			- var margin = data.height
+			
+	td(height=margin style="mso-line-height-rule: exactly; line-height: " + margin + "px; font-size: 1px;" class!=attributes.class) &nbsp;

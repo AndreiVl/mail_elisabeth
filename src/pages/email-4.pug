@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+html(lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="min-height: 100vh;")
+	include include/head.pug
+	+head()
+
+	body(style="min-height: 100vh;")
+		-var utm = '0404_bonuses';
+		-var link = '?utm_source=crm&utm_medium=email&utm_content=homepage&utm_campaign='+utm;
+
+		include ../blocks/mixins.pug						
+		<!-- BODY -->
+		table(align="center" border="0" bgcolor="#E5E5E5" cellpadding="0" cellspacing="0" width="100%" style="min-height: 100vh;")
+			tr
+				+td-margin({height: 30 })
+			tr 
+				td(align="center" valign="top" style="vertical-align: top;")
+					table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							td(align="center")
+								include ../blocks/header/header-2.pug
+						tr
+							td(align="center")
+								include ../blocks/call-to-actions/call-to-actions--left-1.pug
+						tr
+							td(align="center")
+								include ../blocks/advantages/advantages.pug
+						tr
+							td(align="center")
+								include ../blocks/call-to-actions/call-to-actions--play.pug
+						tr
+							td(align="center")
+								<!-- IMG-VERTICAL COL-3 STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tbody
+										tr
+											td(align="center")
+												+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+												div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+													<!-- ID:BG SECTION-1 -->
+													table(align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+														tbody
+															tr
+																td(align="center" style="padding-left: " + body_pading_l_col_3 + "px; padding-right: " + body_pading_r_col_3 + "px;")
+																	+IE-1({width: body_width_col_3_1 ,aling: 'center', valing: 'top'})
+																	div(style="display: inline-block; width: 100%; max-width: " + body_width_col_3_1 + "px; vertical-align: top;")
+																		table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_col_3_1 + "px;")
+																			tbody
+																				tr
+																					+td-margin({height: '45'})
+																				tr
+																					td
+																						table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+																							tr
+																								td(align="center" style="font-size:0;")
+																									+IE-1({col: 2, width_col: table_width_col_3_1, aling: 'center', valing: 'top'})
+																									div(style="display: inline-block; width: 100%; max-width: " + td_3_col_width_div_1 + "px; vertical-align: top;")
+																										<!-- TABLE LEFT -->
+																										table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																											tr
+																												td(align="center" style="padding: 15px 5px;")
+																													+block-gorizontal-1({img: 'img-203-274_01.jpg', alt: 'Men', dates: 'wen 19, 2020', title: 'Street fashion', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu.'})
+
+																									+IE-1({col_td: 2, width_col: table_width_col_3_1, aling: 'center', valing: 'top'})
+																									div(style="display: inline-block; width: 100%; max-width: " + td_3_col_width_div_1 + "px; vertical-align: top;")
+																										<!-- TABLE CENTER -->
+																										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																											tr
+																												td(align="center" style="padding: 15px 5px;")
+																													+block-gorizontal-1({img: 'img-203-274_02.jpg', alt: 'Women', dates: 'tue 21, 2020', title: 'New style', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu.'})
+
+																									+IE-1({col_td: 2, width_col: table_width_col_3_1, aling: 'center', valing: 'top'})
+																									div(style="display: inline-block; width: 100%; max-width: " + td_3_col_width_div_1 + "px; vertical-align: top;")
+																										<!-- TABLE RIGTH -->
+																										table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																											tr
+																												td(align="center" style="padding: 15px 5px;")
+																													+block-gorizontal-1({img: 'img-203-274_03.jpg', alt: 'Men', dates: 'mon 25, 2020', title: 'Fashion idea', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu.'})
+																									|!{IE_TABLE_END}
+																				tr
+																					+td-margin({height: '45'})
+																	|!{IE_TABLE_END}
+												|!{IE_TABLE_END}
+								<!-- TITLE-VERTICAL COL-3 ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/call-to-actions/call-to-actions--play-2.pug
+						tr
+							td(align="center")
+								include ../blocks/footer/footer-2--white.pug
+			tr
+				+td-margin({height: 30 })
+		<!-- /BODY -->

@@ -1,0 +1,94 @@
+.text {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: $color-gray300;
+	text-decoration: none;
+	mso-line-height-rule: exactly;
+}
+.text-small {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	color: $color-gray300;
+	text-decoration: none;
+	mso-line-height-rule: exactly;
+}
+.text-media {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	color: $color-gray300;
+	text-align: left;
+	text-decoration: none;
+	mso-line-height-rule: exactly;
+}
+.text-small--subtitle {
+	/* 3 Typography */
+	text-transform: uppercase;
+	color: $color-gray200;
+}
+.text--subtitle {
+	/* 3 Typography */
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $color-gray200;
+}
+.text--subtitle-14 {
+	/* 3 Typography */
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $color-gray200;
+}
+.text--center {
+	/* 3 Typography */
+	text-align: center;
+}
+.text--right {
+	/* 3 Typography */
+	text-align: right;
+}
+.text--gray {
+	/* 3 Typography */
+	color: $color-gray200;
+}
+.text--balck {
+	/* 3 Typography */
+	color: $color-gray900;
+}
+.text--upper {
+	/* 3 Typography */
+	text-transform: uppercase;
+}
+.text--white {
+	/* 3 Typography */
+	color: $color-white;
+}
+.text--decor {
+	/* 3 Typography */
+	text-decoration: underline;
+}
+.text-no-wrap {
+	/* 3 Typography */
+	white-space: nowrap;
+	word-break: keep-all;
+}

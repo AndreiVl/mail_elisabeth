@@ -1,0 +1,26 @@
+.h1 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */ 
+	font-family: $font-second; 
+	font-size: 42px;
+	font-weight: 700; 
+	line-height: 50px;
+	color: $color-white;
+}
+.h1--black {
+	/* 3 Typography */
+	color: $color-gray900;
+}
+.h1-media {
+	/* 2 Block model */
+	margin: 0;
+	
+	/* 3 Typography */ 
+	font-family: $font-second; 
+	font-size: 26px;
+	font-weight: 700; 
+	line-height: 32px;
+	color: $color-white;
+}

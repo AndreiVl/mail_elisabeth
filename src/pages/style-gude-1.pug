@@ -1,0 +1,291 @@
+include ../blocks/mixins.pug
+
+include ../blocks/header/header-1.pug
+include ../blocks/call-to-actions/call-to-actions.pug 
+include ../blocks/title-vertical/title-vertical-col-3.pug
+
+<!-- IMG-BLOCK STARTS -->
+table(align="center" bgcolor="#E5E5E5" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tbody
+		tr
+			td(align="center")
+				+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+				div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+					<!-- ID:BG SECTION-1 -->
+					table(align="center" bgcolor="#FFFFFF" border="0" class="display-width" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+						tr
+							td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+								+IE-1({width: body_width_1 ,aling: 'center', valing: 'top'})
+								div(style="display: inline-block; width: 100%; max-width: " + body_width_1 + "px; vertical-align: top;")
+									table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_1 + "px;")
+										tr
+											<!-- ID:IMG-BLOCK -->
+											td(align="center" valign="middle" width="630")
+												a(href="#" target="_blank")
+													img(src=image_path+"img-630_01.jpg" alt="630x168" width="630" height="168" style="display: block; width: 100%; max-width: 630px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+										tr
+											+td-margin({margin: 'mr-10'})
+								|!{IE_TABLE_END}
+				|!{IE_TABLE_END}
+<!-- IMG-BLOCK ENDS -->
+
+<!-- 2 COLUMN AND IMG STARTS -->
+table(align="center" bgcolor="#E5E5E5" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tbody
+		tr
+			td(align="center")
+				+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+				div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+					<!-- ID:BG SECTION-1 -->
+					table(align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+						tbody
+							tr
+								td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+									+IE-1({width: body_width_1 ,aling: 'center', valing: 'top'})
+									div(style="display: inline-block; width: 100%; max-width: " + body_width_1 + "px; vertical-align: top;")
+										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_1 + "px;")
+											tbody
+												tr
+													<!-- ID:IMG-BLOCK -->
+													td(align="center" style="color: #ffffff;" width="310")
+														a.link-tdnone(href="#" target="_blank")
+															img(src=image_path+"img-310_01.jpg" border="0" alt="Mens Shoes" align="center" width="310" height="300" style="display: block; width: 100%; max-width: 310px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+													td(width="10") 
+														|&nbsp;
+													td(align="center" style="color: #ffffff;" width="310")
+														a.link-tdnone(href="#" target="_blank")
+															img(src=image_path+"img-310_02.jpg" border="0" alt="Womens Shoes" align="center" width="310" height="300" style="display: block; width: 100%; max-width: 310px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+												tr
+													+td-margin({margin: 'mr-10'})
+												tr
+													td(align="center" style="color: #ffffff;" width="310")
+														a.link-tdnone(href="#" target="_blank")
+															img(src=image_path+"img-310_03.jpg" border="0" alt="Dresses" align="center" width="310" height="300" style="display: block; width: 100%; max-width: 310px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+													td(width="10") 
+														|&nbsp;
+													td(align="center" style="color: #ffffff;" width="310")
+														a.link-tdnone(href="#" target="_blank")
+															img(src=image_path+"img-310_04.jpg" border="0" alt="Costumes" align="center" width="310" height="300" style="display: block; width: 100%; max-width: 310px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+									|!{IE_TABLE_END}
+				|!{IE_TABLE_END}
+<!-- 2 COLUMN AND IMG ENDS -->
+
+<!-- TITLE-1 STARTS -->
+table(align="center" bgcolor="#E5E5E5" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tr
+		td(align="center")
+			+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+			div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+				<!-- ID:BG SECTION-1 -->
+				table(align="center" bgcolor="#ffffff" border="0" class="display-width" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+					tr
+						td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+							+IE-1({width: body_width_1 ,aling: 'center', valing: 'top'})
+							div(style="display: inline-block; width: 100%; max-width: " + body_width_1 + "px; vertical-align: top;")
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_1 + "px;")
+									tr
+										+td-margin({height: '60'})
+									tr
+										<!-- ID:TXT TITLE -->
+										td.h2(align="center") Fashion style
+									tr
+										<!-- ID:TXT TITLE SUB -->
+										td.text.text--center(align="center") Lorem ipsum dolor sit amet, consectetur adipiscing
+									tr
+										+td-margin({margin: 'mr-25'})
+							|!{IE_TABLE_END}
+			|!{IE_TABLE_END}
+<!-- TITLE-1 ENDS -->
+
+<!-- 2 BLOCK-WIDTH-700 STARTS -->
+table(align="center" bgcolor="#E5E5E5" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tr
+		td(align="center")
+			+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+			div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+				<!-- ID:BG SECTION-2 -->
+				table(align="center" bgcolor="#F7F7F9" border="0" class="display-width" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+					tr
+						td(align="center")
+							table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+								tr
+									td(align="center" valign="top" dir="rtl" style="font-size: 0px;")
+										+IE-1({col: 2, width_col: '350', aling: 'center', valing: 'top'})
+										div(style="display: inline-block; width: 100%; max-width: 350px; vertical-align: top;")
+											<!-- TABLE LEFT -->
+											table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+												tr
+													td(align="center")
+														table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 100%;")
+															tr
+																td(align="center")
+																	table(align="center" border="0" cellpadding="0" cellspacing="0" style="width:auto !important;")
+																		tr
+																			td(align="center" style="color: #666666;" width="350")
+																				img(src=image_path+"img-350_01.jpg" alt="350x390" width="350" height="390" style="display: block; width: 100%; max-width: 350px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+										+IE-1({col_td: 2, width_col: '350', aling: 'center', valing: 'top'})
+										div(style="display: inline-block; width: 100%; max-width: 350px; vertical-align: top;")
+											<!-- TABLE RIGHT -->
+											table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+												tr
+													td(align="center" style="padding: 0 10px; font-size: 0px;")
+														+IE-1({col: 3, width: '280' , width_col: '280', aling: 'center', valing: 'top'})
+														div(style="display: inline-block; width: 100%; max-width: 280px; vertical-align: top;")
+															table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																tr
+																	td(align="left")
+																		table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%")
+																			tr
+																				+td-margin({height: '40'})
+																			tr
+																				td.h3(align="left") Lorem ipsum dolor
+																			tr
+																				+td-margin({margin: 'mr-15'})
+																			tr
+																				td.text(align="left") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu ornare odio sagittis. Dis ultrices vivamus est odio mi. Condimentum massa quis facilisis cras tempus velit. Nulla sit sit semper bibendum tincidunt cursus mi amet.
+																			tr
+																				+td-margin({margin: 'mr-25'})
+																			
+																			tr
+																				td(align="left" valign="top")
+																					a(href="#" target="_blank")
+																						img(src=image_path+"btn-140__dark-01.png" border="0" alt="" align="center" width="140" height="44" style="display: block; width: 100%; max-width: 140px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+																			tr
+																				+td-margin({margin: 'mr-20'})
+														|!{IE_TABLE_END}
+										|!{IE_TABLE_END}
+			|!{IE_TABLE_END}
+<!-- 2 BLOCK-WIDTH-700 ENDS -->
+
+<!-- 2 BLOCK-WIDTH-700 STARTS -->
+table(align="center" bgcolor="#E5E5E5" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tr
+		td(align="center")
+			+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+			div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+				<!-- ID:BG SECTION-2 -->
+				table(align="center" bgcolor="#F7F7F9" border="0" class="display-width" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+					tr
+						td(align="center")
+							table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width + "px;")
+								tr
+									td(align="center" valign="top" style="font-size: 0px;")
+										+IE-1({col: 2, width_col: '350', aling: 'center', valing: 'top'})
+										div(style="display: inline-block; width: 100%; max-width: 350px; vertical-align: top;")
+											<!-- TABLE LEFT -->
+											table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+												tr
+													td(align="center")
+														table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 100%;")
+															tr
+																td(align="center")
+																	table(align="center" border="0" cellpadding="0" cellspacing="0" style="width:auto !important;")
+																		tr
+																			td(align="center" style="color: #666666;" width="350")
+																				img(src=image_path+"img-350_02.jpg" alt="350x390" width="350" height="390" style="display: block; width: 100%; max-width: 350px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+										+IE-1({col_td: 2, width_col: '350', aling: 'center', valing: 'top'})
+										div(style="display: inline-block; width: 100%; max-width: 350px; vertical-align: top;")
+											<!-- TABLE RIGHT -->
+											table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+												tr
+													td(align="center" style="padding: 0 10px; font-size: 0px;")
+														+IE-1({col: 3, width: '280' , width_col: '280', aling: 'center', valing: 'top'})
+														div(style="display: inline-block; width: 100%; max-width: 280px; vertical-align: top;")
+															table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																tr
+																	td(align="left")
+																		table(align="left" border="0" cellpadding="0" cellspacing="0" width="100%")
+																			tr
+																				+td-margin({height: '40'})
+																			tr
+																				td.h3(align="left") Lorem ipsum dolor
+																			tr
+																				+td-margin({margin: 'mr-15'})
+																			tr
+																				td.text(align="left") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu ornare odio sagittis. Dis ultrices vivamus est odio mi. Condimentum massa quis facilisis cras tempus velit. Nulla sit sit semper bibendum tincidunt cursus mi amet.
+																			tr
+																				+td-margin({margin: 'mr-25'})
+																			
+																			tr
+																				td(align="left" valign="top")
+																					a(href="#" target="_blank")
+																						img(src=image_path+"btn-140__dark-01.png" border="0" alt="" align="center" width="140" height="44" style="display: block; width: 100%; max-width: 140px; height: auto; margin: 0; border: 0; padding: 0; outline: none;")
+																			tr
+																				+td-margin({margin: 'mr-20'})
+														|!{IE_TABLE_END}
+										|!{IE_TABLE_END}
+			|!{IE_TABLE_END}
+<!-- 2 BLOCK-WIDTH-700 ENDS -->
+
+<!-- TITLE-2 STARTS -->
+table(align="center" bgcolor="#E5E5E5" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tr
+		td(align="center")
+			+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+			div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+				<!-- ID:BG SECTION-1 -->
+				table(align="center" bgcolor="#ffffff" border="0" class="display-width" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+					tr
+						td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+							+IE-1({width: body_width_1 ,aling: 'center', valing: 'top'})
+							div(style="display: inline-block; width: 100%; max-width: " + body_width_1 + "px; vertical-align: top;")
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_1 + "px;")
+									tr
+										+td-margin({height: '60'})
+									tr
+										<!-- ID:TXT TITLE -->
+										td.h2(align="center") News
+									tr
+										<!-- ID:TXT TITLE SUB -->
+										td.text.text--center(align="center") Lorem ipsum dolor sit amet, consectetur adipiscing
+									tr
+										+td-margin({margin: 'mr-15'})
+							|!{IE_TABLE_END}
+			|!{IE_TABLE_END}
+<!-- TITLE-2 ENDS -->
+
+<!-- 2 COLUMN INFO-BCLOCKS STARTS -->
+table(align="center" bgcolor="#E5E5E5" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tbody
+		tr
+			td(align="center")
+				+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+				div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+					<!-- ID:BG SECTION-1 -->
+					table(align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+						tbody
+							tr
+								td(align="center" style="padding-left: " + body_pading_l_col_2 + "px; padding-right: " + body_pading_r_col_2 + "px;")
+									+IE-1({width: body_width_col_2 ,aling: 'center', valing: 'top'})
+									div(style="display: inline-block; width: 100%; max-width: " + body_width_col_2 + "px; vertical-align: top;")
+										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_col_2 + "px;")
+											tbody
+												tr
+													td
+														table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+															tr
+																td(align="center" style="font-size: 0;")
+																	+IE-1({col: 2, width_col: td_2_col_width, aling: 'center', valing: 'top'})
+																	div( style="display: inline-block; width: 100%; max-width: " + td_2_col_width + "px; vertical-align: top;")
+																		<!-- TABLE LEFT -->
+																		table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																			tr
+																				td(align="center" style="padding: 10px 17px;")
+																					+block-gorizontal({img: 'img-298_01.jpg', dates: 'MON 17, 2020', title: 'Exclusive Design', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu ornare odio sagittis.'})
+																	+IE-1({col_td: 2, width_col: td_2_col_width, aling: 'center', valing: 'top'})
+																	div( style="display: inline-block; width: 100%; max-width: " + td_2_col_width + "px; vertical-align: top;")
+																		<!-- TABLE RIGHT -->
+																		table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																			tr
+																				td(align="center" style="padding: 10px 17px;")
+																					+block-gorizontal({img: 'img-298_02.jpg', dates: 'TH 19, 2020', title: 'New Season Dresscode', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu ornare odio sagittis.'})
+																	|!{IE_TABLE_END}
+												tr
+													+td-margin({height: '50'})
+									|!{IE_TABLE_END}
+				|!{IE_TABLE_END}
+<!-- 2 COLUMN INFO-BCLOCKS ENDS -->
+
+include ../blocks/call-to-actions/call-to-actions--play.pug
+include ../blocks/brends/brends.pug
+include ../blocks/footer/footer-1.pug

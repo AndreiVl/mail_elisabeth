@@ -1,0 +1,17 @@
+mixin contact-vertical(data)
+	table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+		tr
+			<!-- ID:IMG ELEMENTS HEADING -->
+			td(align="center" style="line-height: 0px;" width="40")
+				img(src=image_path+data.img, alt=data.alt width="40" height="40" style="display: block; margin: 0; border: 0; padding: 0; outline: none; color:#333333;")
+		tr
+			+td-margin({margin: 'mr-5'})
+		tr
+			<!-- ID:TXT ELEMENTS HEADING -->
+			td.h4(align="center")!=data.title
+		tr
+			+td-margin({margin: 'mr-5'})
+		tr
+			<!-- ID:TXT ELEMENTS LINK -->
+			td.text(align="center")
+				a.link(href=data.url)!=data.link

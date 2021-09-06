@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+html(lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="min-height: 100vh;")
+	include include/head.pug
+	+head()
+
+	body(style="min-height: 100vh;")
+		-var utm = '0404_bonuses';
+		-var link = '?utm_source=crm&utm_medium=email&utm_content=homepage&utm_campaign='+utm;
+
+		include ../blocks/mixins.pug						
+		<!-- BODY -->
+		table(align="center" border="0" bgcolor="#E5E5E5" cellpadding="0" cellspacing="0" width="100%" style="min-height: 100vh;")
+			tr
+				+td-margin({height: 30 })
+			tr 
+				td(align="center" valign="top" style="vertical-align: top;")
+					table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+						tr
+							td(align="center")
+								include ../blocks/header/header-4.pug
+						tr
+							td(align="center")
+								<!-- CALL-TO-ACTIONS  STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tr
+										td(align="center")
+											+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+											div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+												<!-- ID:BG HEADER-1 OPTIONAL BG -->
+												table(align="center" bgcolor="#BCBBAF" border="0" class="display-width" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+													tr
+														td(align="center" background=image_path+"img-700_06.jpg" style="width:100%; background-image:url("+image_path+"img-700_06.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;")
+															<!--[if (gte mso 9)|(IE)]>
+																<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 700px; height: 323px;">
+																<v:fill type="frame" src="images/img-700_06.jpg" color="#f6f8f7" />
+																<v:textbox inset="0,0,0,0">
+															<![endif]-->
+															div(style="margin: auto;")
+																table(align="center" border="0" background=image_path+"img-700_06.jpg" cellpadding="0" cellspacing="0" class="display-width" width="100%" style="background-image:url("+image_path+"img-700_06.jpg); background-position: center; background-repeat: no-repeat;")
+																	tr
+																		td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px; font-size:0;")
+																			+IE-1({width: body_width_2 ,aling: 'center', valing: 'top'})
+																			div(style="display: inline-block; width: 100%; max-width: " + body_width_1 + "px; vertical-align: top;")
+																				table(align="center" border="0" class="display-width-inner" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_1 + "px;")
+																					tr
+																						+td-margin({height: '91'})
+																					tr
+																						td(align="center" style="padding:0 10px;")
+																							table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 100%;")
+																								tr
+																									<!-- ID:TXT CALL-TO-ACTIONS HEADING -->
+																									td.h1(align="center") New Season
+																										br
+																										|Design
+																					tr
+																						+td-margin({height: '132'})
+																			|!{IE_TABLE_END}
+															<!--[if (gte mso 9)|(IE)]></v:textbox> </v:rect> <![endif]-->
+											|!{IE_TABLE_END}
+								<!-- CALL-TO-ACTIONS ENDS -->
+						tr
+							td(align="center")
+								<!-- IMG-VERTICAL COL-2 STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tbody
+										tr
+											td(align="center")
+												+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+												div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+													<!-- ID:BG SECTION-1 -->
+													table(align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+														tbody
+															tr
+																td(align="center" style="padding-left: " + body_pading_l_col_2 + "px; padding-right: " + body_pading_r_col_2 + "px;")
+																	+IE-1({width: body_width_col_2 ,aling: 'center', valing: 'top'})
+																	div(style="display: inline-block; width: 100%; max-width: " + body_width_col_2 + "px; vertical-align: top;")
+																		table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_col_2 + "px;")
+																			tbody
+																				tr
+																					+td-margin({height: '43'})
+																				tr
+																					td
+																						table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+																							tr
+																								td(align="center" style="font-size: 0;")
+																									+IE-1({col: 2, width_col: td_2_col_width, aling: 'center', valing: 'top'})
+																									div(style="display: inline-block; width: 100%; max-width: " + td_2_col_width + "px; vertical-align: top;")
+																										<!-- TABLE LEFT -->
+																										+picture-title({img: 'img-298-300_01.jpg', alt: 'women', subtitle: 'the season', title: 'Fashion show'})
+
+
+																									+IE-1({col_td: 2, width_col: td_2_col_width, aling: 'center', valing: 'top'})
+																									div(style="display: inline-block; width: 100%; max-width: " + td_2_col_width + "px; vertical-align: top;")
+																										<!-- TABLE RIGHT -->
+																										+picture-title({img: 'img-298-300_02.jpg', alt: 'women', subtitle: 'new vision', title: 'Women’s style'})
+
+																									|!{IE_TABLE_END}
+																				tr
+																					+td-margin({height: '8'})
+																	|!{IE_TABLE_END}
+												|!{IE_TABLE_END}
+								<!-- IMG-VERTICAL COL-2 ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/call-to-actions/call-to-actions--play-2.pug
+						tr
+							td(align="center")
+								<!-- ADVANTAGES 3 COLUMN STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tbody
+										tr
+											td(align="center")
+												+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+												div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+													<!-- ID:BG SECTION-1 -->
+													table(align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+														tbody
+															tr
+																td(align="center" style="padding-left: " + body_pading_l_col_3 + "px; padding-right: " + body_pading_r_col_3 + "px;")
+																	+IE-1({width: body_width_col_3_1 ,aling: 'center', valing: 'top'})
+																	div(style="display: inline-block; width: 100%; max-width: " + body_width_col_3_1 + "px; vertical-align: top;")
+																		table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_col_3_1 + "px;")
+																			tbody
+																				tr
+																					+td-margin({height: '10'})
+																				tr
+																					td
+																						table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+																							tr
+																								td(align="center" style="font-size:0;")
+																									+IE-1({col: 2, width_col: table_width_col_3_1, aling: 'center', valing: 'top'})
+																									div(style="display: inline-block; width: 100%; max-width: " + td_3_col_width_div_1 + "px; vertical-align: top;")
+																										<!-- TABLE LEFT -->
+																										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																											tr
+																												td(align="center" style="padding: 15px 5px;")
+																													+advantage-vertical({img: 'icon-52--light-bulb.png', alt: 'light-bulb', subtitle: 'creative ideas', title: 'Best choice', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu.'})
+
+																									+IE-1({col_td: 2, width_col: table_width_col_3_1, aling: 'center', valing: 'top'})
+																									div(style="display: inline-block; width: 100%; max-width: " + td_3_col_width_div_1 + "px; vertical-align: top;")
+																										<!-- TABLE CENTER -->
+																										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																											tr
+																												td(align="center" style="padding: 15px 5px;")
+																													+advantage-vertical({img: 'icon-52--monitor.png', alt: 'monitor', subtitle: 'all platforms', title: 'Web version', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu.'})
+
+																									+IE-1({col_td: 2, width_col: table_width_col_3_1, aling: 'center', valing: 'top'})
+																									div(style="display: inline-block; width: 100%; max-width: " + td_3_col_width_div_1 + "px; vertical-align: top;")
+																										<!-- TABLE RIGHT -->
+																										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%; max-width: 100%; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;")
+																											tr
+																												td(align="center" style="padding: 15px 5px;")
+																													+advantage-vertical({img: 'icon-52--question.png', alt: 'question', subtitle: 'always in touch', title: 'Support 24/7', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu.'})
+																									|!{IE_TABLE_END}
+																				tr
+																					+td-margin({height: '45'})
+																	|!{IE_TABLE_END}
+												|!{IE_TABLE_END}
+								<!-- ADVANTAGES 3 COLUMN ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/author-bg/author-bg.pug
+						tr
+							td(align="center")
+								<!-- TEXT-CONTENT STARTS -->
+								table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+									tbody
+										tr
+											td(align="center")
+												+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+												div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+													<!-- ID:BG SECTION-1 -->
+													table(align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+														tbody
+															tr
+																td(align="center" style="padding-left: " + body_pading_l + "px; padding-right: " + body_pading_r + "px;")
+																	+IE-1({width: body_width_1 ,aling: 'center', valing: 'top'})
+																	div(style="display: inline-block; width: 100%; max-width: " + body_width_1 + "px; vertical-align: top;")
+																		table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_1 + "px;")
+																			tbody
+																				tr
+																					+td-margin({height: '60'})
+																				tr
+																					td.h2(align="center") Contact us
+
+																	|!{IE_TABLE_END}
+												|!{IE_TABLE_END}
+								<!-- TEXT-CONTENT ENDS -->
+						tr
+							td(align="center")
+								include ../blocks/contact-vertical/contact-vertical-col-3.pug
+						tr
+							td(align="center")
+								include ../blocks/footer/footer-3.pug
+			tr
+				+td-margin({height: 30 })
+		<!-- /BODY -->

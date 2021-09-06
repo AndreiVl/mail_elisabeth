@@ -1,0 +1,34 @@
+mixin head(title='Mail')
+	head
+		|<!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+		meta(content="text/html; charset=utf-8" http-equiv="Content-Type")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		|<!--[if !mso]><!-->
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		|<!--<![endif]-->
+		meta(name="x-apple-disable-message-reformatting")
+		meta(name="format-detection" content="telephone=no")
+
+		title #{title}
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+
+		style(type="text/css")
+			|html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
+			|@-ms-viewport {width:device-width}		
+			|a[href^="tel"] {color: inherit!important; text-decoration: none!important;}
+
+		style( id="media-query" type="text/css")
+			|@media (max-width: 720px) {
+			| .fs-pd-10 {padding-right: 5px!important; padding-left: 5px!important;}
+			|	.fs_16 {font-size: 16px!important; line-height: 24px!important;}
+			| .h1-media {font-size: 14px!important; line-height: 20px!important;}
+			| .text-media {font-size: 8px!important; line-height: 14px!important;}
+			| .text-media-h1 {font-size: 30px!important; line-height: 46px!important;}
+			| .media-width {width: 100%!important; max-width: 100%!important;}
+			| .td-height {height: auto!important;}
+			| .td-height-auto {height: auto!important;}
+			|	.media-tb-width {width: 100%!important; max-width: 100%!important;}
+			|	.col--md-right {text-align: left!important;}
+			| .td-tex-right  {text-align: left!important;}
+			|}

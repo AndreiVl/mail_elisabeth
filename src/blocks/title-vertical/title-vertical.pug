@@ -1,0 +1,8 @@
+mixin title-vertical(data)
+	table(width="100%" align="center" border="0" cellspacing="0" cellpadding="0")
+		tr
+			td.h4(align="center" valign="top")!=data.title 
+		tr
+			+td-margin({margin: 'mr-10'})
+		tr
+			td.text-small.text--center(align="center" valign="top")!=data.text

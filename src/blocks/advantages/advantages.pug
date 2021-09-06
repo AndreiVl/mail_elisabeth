@@ -1,0 +1,49 @@
+<!-- 2 COLUMN ADVANTAGES STARTS -->
+table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+	tbody
+		tr
+			td(align="center")
+				+IE-1({width: table_width ,aling: 'center', valing: 'top'})
+				div(style="display: inline-block; width: 100%; max-width: " + table_width + "px; vertical-align: top;")
+					<!-- ID:BG SECTION-1 -->
+					table(align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + table_width + "px;")
+						tbody
+							tr
+								td(align="center" style="padding-left: " + body_pading_l_col_2 + "px; padding-right: " + body_pading_r_col_2 + "px;")
+									+IE-1({width: body_width_col_2 ,aling: 'center', valing: 'top'})
+									div(style="display: inline-block; width: 100%; max-width: " + body_width_col_2 + "px; vertical-align: top;")
+										table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: " + body_width_col_2 + "px;")
+											tbody
+												tr
+													+td-margin({height: '43'})
+												tr
+													td
+														table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+															tr
+																td(align="center" style="font-size: 0;")
+																	+IE-1({col: 2, width_col: td_2_col_width, aling: 'center', valing: 'top'})
+																	div( style="display: inline-block; width: 100%; max-width: " + td_2_col_width + "px; vertical-align: top;")
+																		<!-- TABLE LEFT -->
+																		+advantage-gorizontal({img: 'icon-52--question.png', alt: 'question', title: 'Support 24/7', subtitle: 'always in touch', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu ornare odio sagittis.'})
+
+																	+IE-1({col_td: 2, width_col: td_2_col_width, aling: 'center', valing: 'top'})
+																	div( style="display: inline-block; width: 100%; max-width: " + td_2_col_width + "px; vertical-align: top;")
+																		<!-- TABLE RIGHT -->
+																		+advantage-gorizontal({img: 'icon-52--paper-plane.png', alt: 'paper-plane', title: 'Open code', subtitle: 'freedom of action', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu ornare odio sagittis.'})
+																	|!{IE_TABLE_END}
+															tr
+																td(align="center" style="font-size: 0;")
+																	+IE-1({col: 2, width_col: td_2_col_width, aling: 'center', valing: 'top'})
+																	div( style="display: inline-block; width: 100%; max-width: " + td_2_col_width + "px; vertical-align: top;")
+																		<!-- TABLE LEFT -->
+																		+advantage-gorizontal({img: 'icon-52--light-bulb.png', alt: 'light-bulb', title: 'Best choice', subtitle: 'creative ideas', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu ornare odio sagittis.'})
+																	+IE-1({col_td: 2, width_col: td_2_col_width, aling: 'center', valing: 'top'})
+																	div( style="display: inline-block; width: 100%; max-width: " + td_2_col_width + "px; vertical-align: top;")
+																		<!-- TABLE RIGHT -->
+																		+advantage-gorizontal({img: 'icon-52--monitor.png', alt: 'monitor', title: 'Web version', subtitle: 'all platforms', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel massa arcu ornare odio sagittis.'})
+																	|!{IE_TABLE_END}
+												tr
+													+td-margin({height: '43'})
+									|!{IE_TABLE_END}
+				|!{IE_TABLE_END}
+<!-- 2 COLUMN ADVANTAGES ENDS -->
